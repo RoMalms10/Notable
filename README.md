@@ -8,6 +8,8 @@ Use the following command to start it:
 
 Now, open a new terminal and follow along the following steps to test the functionality. Please make sure you're using the correct UUIDs when typing in the commands. I have included the ones I used when testing locally.
 
+NOTE: I'm aware that my imports look weird. This is just how I was able to get it working locally.
+
 ## First, add a doctor:
 `curl -X POST 'http://localhost:8080/doctor/add' -H 'Content-Type: application/json' -d '{"first_name": "Robert", "last_name": "Malmstein"}'`
 
