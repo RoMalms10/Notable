@@ -1,7 +1,5 @@
 # Notable Take Home Test
 
-To access the files from my computer, go to Ubuntu terminal and type "explorer.exe ." and take the files from there.
-
 ## Welcome to my take home assignment
 To run this code, you need to have go set up and working in your environment.
 
