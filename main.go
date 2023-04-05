@@ -23,6 +23,14 @@ func main() {
 		handlers.GetDoctors(dataStore, w, r)
 	})
 
+	http.HandleFunc("/doctor", func(w http.ResponseWriter, r *http.Request) {
+		handlers.GetDoctor(dataStore, w, r)
+	})
+
+	http.HandleFunc("/doctor/add", func(w http.ResponseWriter, r *http.Request) {
+		handlers.AddDoctor(dataStore, w, r)
+	})
+
 	http.HandleFunc("/appointments", func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
 		case "GET":
