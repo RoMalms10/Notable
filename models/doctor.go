@@ -1,8 +1,9 @@
 package models
 
-type Person struct {
-	Name string `json:"name"`
-	Age  int    `json:"age"`
+type Doctor struct {
+	UUID     int           `json:"id"`
+	Name     string        `json:"name"`
+	Calendar []Appointment `json:"calendar"`
 }
 
 //serialize the Person struct as JSON
